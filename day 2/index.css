@@ -1,0 +1,56 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #BF0426;
+text-align: center;
+}
+
+h2 {
+  margin: 20px;
+  color: #E9F2EA;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  color: #E9F2EA;
+  margin-left: 20px;
+}
+
+.calendar-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 2px;
+  padding: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #70BF5A;
+  border-radius: 20px;
+}
+
+.calendar-box {
+  background-color: #528C42;
+  color:gold ;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2px;
+  
+  border: 1px dashed black;
+}
+.calendar-box:hover{
+  background-color: limegreen;
+}
+
+.calendar-box p {
+  margin: 0;
+  text-align: center;
+  font-size: 1.25rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  color:#E9F2EA;
+  font-weight: 600;
+  
+}
+ol li{
+  list-style-type: none;
+}

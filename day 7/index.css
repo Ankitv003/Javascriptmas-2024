@@ -1,0 +1,370 @@
+/*
+Link to Figma: https://scrimba.com/links/santa-saas-figma
+*/
+*,*::before,*::after {
+    --red: rgba(143, 0, 2, 0.83);
+    --light-red: #FFF2F2;
+    --dark-red: #470000;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    /* color: #fff; */
+    line-height: 1.5;
+     font-family: "Be Vietnam Pro", sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+header {
+    position: relative;
+    padding-bottom: 5em;
+    background: transparent;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--red);
+    clip-path: polygon(41% 0, 0 0, 0 48%, 0 67%, 42% 67%, 61% 61%, 86% 57%, 100% 51%, 100% 59%, 100% 0, 80% 0%, 55% 0);
+    z-index: -1; /* Pushes the pseudo-element behind the content */
+}
+
+.header-text{
+    font-size:1rem;
+    width: 40%;
+    margin: 1.5em auto;
+    text-align: center;
+    
+}
+h1{
+    font-size: 3.95rem;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    line-height: 1.1;
+}
+h2{
+    line-height: 1.1;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap:2em
+}
+.registeration {
+    gap:1em;
+}
+ul, li {
+    padding: 0;
+    list-style-type: none;
+}
+.navbar-links{
+    text-decoration: none;
+    color: #fff;
+    
+}
+img {
+    max-width: 100%;
+}
+button {
+    width: 120px; 
+    border-radius: 8px;
+    padding: 0.5em;
+    border: none;
+    text-align: center; 
+    display: inline-block;
+    line-height: 1.5;
+
+}
+#customer img {
+    width: 100px;
+}
+
+.dashboard-img {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Add a soft shadow */
+}
+
+.button-secondary{
+    display: flex;
+    justify-content: center;
+    gap:1em;
+    margin:1em 0;
+    /* max-width:150px; */
+}
+.login-btn, .demo-btn{
+    background-color:transparent;
+    color: #fff;
+    border: 1px solid white;
+    
+}
+.sign-up-btn{
+    color: var(--red);
+    margin-right: 4em;
+}
+.try-for-free-btn{
+    color: var(--red);
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4em;
+}
+.logo img{
+    margin-right: 0.5em;
+}
+
+.button-secondary button {
+    flex: 1;
+    max-width: 180px;
+}
+
+
+
+/* section- product*/
+#product{
+    text-align: center;
+    margin-bottom: 5em;
+}
+.product-title{
+    color: #470000;
+    font-size: 2.25rem;
+}
+
+.product-text{
+    color:#969696;
+    font-size: 0.875rem;
+    margin-bottom: 5em;
+}
+
+.product-cards{
+    display: flex;
+    text-align: left;
+    width:85%;
+    gap:1.5em;
+
+    margin: 0 auto;
+}
+.product-card{
+    border: 1px solid #eaeaea;
+    border-radius: 15px;
+    padding: 1.25em;
+    padding-bottom: 2.5em;
+    padding-top: 2.5em;
+}
+
+.product-card-title{
+    color: #343434;
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.product-card-text{
+    font-size: 0.875rem;
+    color: #969696;
+}
+
+.product-card a{
+    color: #8F0002;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom:2.5px solid #8F0002;
+    /* padding-bottom: 1em; */
+}
+
+.product-card-img{
+    background-color: #FFF2F2;
+    padding:0.5em 0.75em;
+    width:max-content;
+    border-radius: 15px;
+}
+
+
+/* section-solution */
+#solution {
+    position: relative;
+    display: flex;
+    padding: 5em;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    background-color: #f2f2ff;
+    z-index: 0; /* Ensure it remains behind other content */
+}
+
+#solution::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #8F0002; /* Match the red color used in the header */
+   clip-path: circle(40% at 98% 25%);
+
+    z-index: -1; /* Pushes it behind the content */
+}
+.solution-img {
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Match the shadow style of .dashboard-img */
+    position: relative;
+    z-index: 1; /* Ensure the image remains above the clipped background */
+}
+
+.solution-content{
+    width: 50%;
+    position: relative;
+    bottom: 17px;
+}
+
+
+.solution-content-header{
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: #470000;
+    margin-bottom: 0.5em;
+
+}
+.solution-content-text-one{
+    font-size: 0.875rem;
+    color: #969696;
+    width: 75%;
+}
+.solution-content-text-two{
+ margin-top: 2em;   
+ font-size: 0.875rem;
+ color: #343434;
+ font-weight: 600;  
+}
+.solution-content-text-two img{
+    position: relative;
+    top: 5px;
+}
+.elf-img-two{
+    position: relative;
+}
+.solution-content-button{
+    background-color: #8F0002;
+    color: #FFF2F2;
+    width: 150px;
+}
+
+/* section-pricing */
+
+#pricing{
+    background-color: #FFF2F2;
+    padding-top: 2em;
+}
+.pricing-header{
+    margin-top: 0;
+    text-align: center;
+    font-size: 3.25rem;
+    color:#470000;
+    font-weight: 700;
+}
+.pricing-text{
+    text-align: center;
+    font-size: 0.875rem;
+    color: #969696;
+}
+
+.pricing-cards{
+    display: flex;
+    padding: 5em;
+    gap: 2em;
+}
+.pricing-christmas-eve{
+     padding:1em;
+     text-align:center;
+     color: #fff;
+     background-color: #8F0002;
+     border-radius: 15px;
+}
+.pricing-christmas-lite{
+     padding:1em;
+     text-align:center;
+     background-color: #fff;
+     color: #8F0002;
+     border-radius: 15px;
+}
+.pricing-christmas-day{
+    padding:1em;
+    text-align:center;
+    background-color: #fff;
+    color: #8F0002;
+    border-radius: 15px;
+}
+.pricing-cards ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.pricing-card-header-red,.pricing-card-header-white{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.pricing-cards button{
+    width: 90%;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.pricing-button-red{
+    color: #fff;
+    background-color: #8F0002; 
+}
+
+.pricing-button-white{
+    color: #8F0002;
+}
+.pricing-card-span-red{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #470000;
+}
+.pricing-card-span-white{
+    color: #fff;
+        font-size: 3.5rem;
+    font-weight: 700;
+}
+.pricing-card-content-white{
+    font-size: 1rem;
+    color: #969696;
+}
+.pricing-card-content-red{
+    font-size: 1rem;
+    color: #ececec;
+}
+.white-check, .red-check, .grey-check{
+   position: relative;
+   top:4px;
+   margin-right: 0.75em;
+}
+.not-supported{
+    text-decoration: line-through;
+}
+
+.pricing-cards li{
+    margin-left: 1em;
+}
+.pricing-cards ul{
+    margin-top: 3.5em;
+    margin-bottom: 2em;
+}
+
+.span-month{
+    color: #969699;
+}

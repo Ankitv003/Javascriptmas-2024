@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ff7474;
+}
+
+main {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    padding: .5em;
+}
+
+.label { 
+    background-color: 	#ffabab;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 300px;
+    /* height: 300px; */
+    border: 5px solid green;
+    border-radius: 5px;
+    padding: 2em;
+    padding-bottom: 0;
+}
+
+.img-one{
+    width: 40px;
+    position: relative;
+    right: 155px;
+    bottom:15px
+}
+
+.img-two{
+    width: 40px;
+    position: relative;
+    left: 155px;
+    bottom: 15px;
+}
+
+.label h2:last-child{
+    margin-bottom: 0;
+}
+
+
+h1{
+  font-family: "Marck Script", serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+h2{
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+}
